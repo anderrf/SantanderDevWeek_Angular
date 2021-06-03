@@ -1,0 +1,4 @@
+<div class="select-bar">
+  <button id="btnAll" [class.active]="this.selection == 'all'" type="button" value="btnAll" (click)="selectOption('btnAll')">Todas as cotações</button>
+  <button id="btnToday" [class.active]="this.selection == 'today'" type="button" value="btnToday" (click)="selectOption('btnToday')">Cotações de hoje</button>
+</div>

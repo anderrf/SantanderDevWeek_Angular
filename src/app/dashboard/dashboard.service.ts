@@ -15,4 +15,8 @@ export class DashboardService {
     return this.http.get<Stock[]>(`${this.baseUrl}/stock`).toPromise();
   }
 
+  async getTodayStocks(): Promise<Stock[]> {
+    return this.http.get<Stock[]>(`${this.baseUrl}/stock/today`).toPromise();
+  }
+
 }

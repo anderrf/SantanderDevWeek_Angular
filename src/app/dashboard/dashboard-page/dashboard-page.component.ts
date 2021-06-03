@@ -22,4 +22,11 @@ export class DashboardPageComponent implements OnInit {
     console.log(this.stocks);
   }
 
+  async fetchTodayStocks(): Promise<void>{
+    this.stocks = await this.dashboardService.getTodayStocks();
+    console.log(this.stocks);
+  }
+
+
+
 }
